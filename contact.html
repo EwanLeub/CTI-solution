@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | CTI Solution</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+
+        .bg-cti-navy { background-color: #002344; }
+
+        .text-cti-navy { color: #002344; }
+
+        .bg-cti-orange { background-color: #FF9900; }
+
+        .text-cti-orange { color: #FF9900; }
+
+        .border-cti-orange { border-color: #FF9900; }
+
+    </style>
+
+</head>
+
+<body class="bg-white text-gray-800">
+
+
+
+    <header class="shadow-md sticky top-0 bg-white z-50">
+
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+            <img src="CTI Logo.png" alt="CTI Solution" class="h-12">
+
+           <div class="hidden md:flex space-x-8 font-bold text-cti-navy">
+                <a href="index.html" class="hover:text-cti-orange transition">Accueil</a>
+                <a href="expertises.html" class="hover:text-cti-orange transition">Expertises</a>
+                <a href="equipe.html" class="hover:text-cti-orange transition">L'Équipe</a>
+                <a href="contact.html" class="text-cti-orange border-b-2 border-cti-orange">Contact</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <section class="py-16 container mx-auto px-6 grid md:grid-cols-2 gap-16">
+
+        <div>
+
+            <h1 class="text-4xl font-bold text-cti-navy mb-6">Prêt à optimiser votre énergie ?</h1>
+
+            <p class="text-gray-600 mb-8">
+
+                Nous accompagnons les maîtres d’ouvrage et installateurs avec une expertise indépendante certifiée RGE.
+
+            </p>
+
+            
+
+            <h3 class="font-bold text-cti-navy mb-4">Partenaires & Support Technique :</h3>
+
+            <div class="grid grid-cols-2 gap-4 text-sm text-gray-500 italic">
+
+                <span>• Daikin</span><span>• Carrier</span><span>• Danfoss</span><span>• Viessmann</span><span>• Engie</span><span>• Johnson Control</span>
+
+            </div>
+
+            <p class="mt-4 text-xs text-gray-400">Nous bénéficions d'un accès privilégié au support technique de ces constructeurs.</p>
+
+
+
+            <div class="mt-12 p-6 bg-slate-50 border-l-4 border-cti-orange">
+
+                <h4 class="font-bold text-cti-navy mb-2">Votre satisfaction est notre priorité</h4>
+
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScZtRVr9EIMYor1ebnL4494YWnKD73sFDWY1dHwv4N7ggeNJA/viewform" target="_blank" class="text-cti-orange font-bold underline">
+
+                    Remplir notre questionnaire de fin de prestation
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="bg-white p-8 shadow-2xl rounded-xl border border-gray-100">
+
+            <form id="contactForm" class="space-y-6">
+
+                <input type="text" placeholder="Nom complet ou Entreprise" class="w-full p-4 border border-gray-300 rounded focus:ring-2 focus:ring-cti-orange outline-none" required>
+
+                <input type="email" id="email" placeholder="Email professionnel" class="w-full p-4 border border-gray-300 rounded focus:ring-2 focus:ring-cti-orange outline-none" required>
+
+                <textarea id="message" rows="5" placeholder="Détaillez votre besoin (Audit, calculs, plans...)" class="w-full p-4 border border-gray-300 rounded focus:ring-2 focus:ring-cti-orange outline-none" required></textarea>
+
+                <button type="submit" class="w-full bg-cti-navy text-white py-4 rounded font-bold hover:bg-slate-800 transition shadow-lg">Envoyer ma demande</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+    <script>
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+
+            e.preventDefault();
+
+            const email = document.getElementById('email').value;
+
+            if(email.includes('@')) {
+
+                alert('Merci ! Votre demande a été transmise à l\'équipe CTI Solution.');
+
+                this.reset();
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>

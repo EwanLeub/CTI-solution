@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Équipe | CTI Solution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-cti-navy { background-color: #002344; }
+        .text-cti-navy { color: #002344; }
+        .bg-cti-orange { background-color: #FF9900; }
+        .text-cti-orange { color: #FF9900; }
+    </style>
+</head>
+<body class="bg-white">
+    <header class="shadow-md sticky top-0 bg-white z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <img src="CTI Logo.png" alt="CTI Solution" class="h-12">
+            <div class="hidden md:flex space-x-8 font-bold text-cti-navy">
+                <a href="index.html" class="hover:text-cti-orange transition">Accueil</a>
+                <a href="expertises.html" class="hover:text-cti-orange transition">Expertises</a>
+                <a href="equipe.html" class="text-cti-orange border-b-2 border-cti-orange">L'Équipe</a>
+                <a href="contact.html" class="hover:text-cti-orange transition">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="py-20 container mx-auto px-6">
+        <h1 class="text-4xl font-bold text-cti-navy text-center mb-12">Nos Ingénieurs Experts</h1>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-slate-50 p-8 rounded-xl border border-gray-200 shadow-sm">
+                <h3 class="text-xl font-bold text-cti-navy mb-2">Matéo DESPAX</h3>
+                <p class="text-cti-orange font-bold text-sm mb-4 italic">Ingénieur Chauffagiste</p>
+                <p class="text-sm text-gray-600">Spécialisé dans la conception et le dimensionnement CVC. Expert en optimisation énergétique durable.</p>
+            </div>
+            <div class="bg-slate-50 p-8 rounded-xl border border-gray-200 shadow-sm">
+                <h3 class="text-xl font-bold text-cti-navy mb-2">Ewan LE BORGNE RAULOT</h3>
+                <p class="text-cti-orange font-bold text-sm mb-4 italic">Ingénieur Traitement d’Air</p>
+                <p class="text-sm text-gray-600">Responsable de la qualité d'air intérieur et des systèmes de ventilation complexes.</p>
+            </div>
+            <div class="bg-slate-50 p-8 rounded-xl border border-gray-200 shadow-sm">
+                <h3 class="text-xl font-bold text-cti-navy mb-2">Gabriel PHAM</h3>
+                <p class="text-cti-orange font-bold text-sm mb-4 italic">Ingénieur Froid</p>
+                <p class="text-sm text-gray-600">Expert en réfrigération industrielle avec intégration de solutions à faible impact carbone.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-cti-navy text-white py-10 text-center">
+        <p>© 2025 CTI Solution</p>
+    </footer>
+</body>
+</html>
